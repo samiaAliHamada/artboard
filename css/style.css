@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+
+* {
+    font-family: 'Poppins-Regular';
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
+
+
+.nav-items {
+    gap: 15px;
+}
+
+.underlined__navitem {
+    color: #522681 !important;
+}
+
+.underlined__navitem::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background-color: #522681;
+    bottom: 15px;
+    left: 5px;
+}
+
+.underlined__navitem {
+    color: #000;
+}
+
+.underlined__navitem:hover:after {
+    background-color: #000;
+}
+
+.hovering__underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 15px;
+    left: 0;
+    background-color: #7a797a;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.hovering__underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.main__section__left__part {
+    gap: 70px;
+}
+
+.main__section__text {
+    font-family: 'Poppins-bold';
+    font-size: 70px;
+}
+
+@media (max-width:555px) {
+    .main__section__text {
+        font-size: 50px;
+    }
+}
+
+.main__section__text__item::after {
+    content: '';
+    position: absolute;
+    right: -50px;
+    top: -30px;
+    width: 70px;
+    height: 70px;
+    background-image: url("data:image/svg+xml,%3Csvg  xmlns='http://www.w3.org/2000/svg' width='79.172' height='75.582' viewBox='0 0 79.172 75.582'%3E%3Cpath id='Path_14' data-name='Path 14' d='M38.4,70.713c-.518-.032-12.773-.818-21.817-3.521a45.3,45.3,0,0,1-15.309-7.8,3.64,3.64,0,0,1,4.713-5.548,38.748,38.748,0,0,0,12.68,6.375c8.252,2.466,20.065,3.222,20.183,3.23a3.64,3.64,0,0,1-.222,7.273C38.554,70.721,38.479,70.718,38.4,70.713Zm5.511-11.748a3.615,3.615,0,0,1-2.578-1.208c-.147-.164-3.745-4.234-16.741-23.167C11.222,15.111,9.9,4.593,9.845,4.154A3.64,3.64,0,0,1,17.074,3.3c.032.224,1.453,9.588,13.521,27.17C43.138,48.744,46.627,52.754,46.769,52.916a3.642,3.642,0,0,1-2.728,6.052ZM61.669,50.13a3.639,3.639,0,0,1-3.519-3.756l.973-29.908A3.639,3.639,0,0,1,66.4,16.7l-.973,29.908a3.64,3.64,0,0,1-3.636,3.521Z' transform='translate(70.033 -0.014) rotate(82)' fill='%23522681' /%3E%3C/svg%3E");
+}
+
+.contact__btn {
+    background-color: #522681;
+    width: 250px;
+    transition: all 200ms ease-in-out;
+}
+
+.contact__btn:hover {
+    background-color: #83D95B;
+    color: #000 !important;
+}
+
+.social__icons__container {
+    gap: 45px;
+}
+
+@media (max-width:555px) {
+    .social__icons__container {
+        font-size: 17px;
+        gap: 20px;
+    }
+}
+
+.social__icons__container a {
+    gap: 10px;
+    color: #522681;
+}
+
+.social__icons__container a:hover {
+    color: rgb(68, 67, 67);
+}
+
+.social__icons__container :hover i {
+    border-bottom: 1px rgb(68, 67, 67) solid;
+}
+
+.vid__icon {
+    left: -70px;
+}
