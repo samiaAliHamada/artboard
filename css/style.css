@@ -16,8 +16,13 @@
     cursor: pointer;
 }
 
+.dark__grey__color {
+    color: #444147;
+}
 
-
+.purple__color {
+    color: #522681;
+}
 
 
 .nav-items {
@@ -126,4 +131,93 @@
 
 .vid__icon {
     left: -70px;
+}
+
+.services__container {
+    background-color: #D3C9DE;
+}
+
+.services__inside__container {
+    gap: 30px;
+}
+
+.services__item {
+    color: #522681;
+    transition: all 200ms ease-in-out;
+}
+
+.services__item:hover {
+    color: #83D95B;
+}
+
+.projects__section {
+    gap: 60px;
+}
+
+.projects__card,
+.projects__card img {
+    min-height: 250px;
+    min-width: 250px;
+}
+
+.scroll__icon {
+    right: 0;
+    top: 50%;
+    z-index: 100000;
+}
+
+.card__overlay {
+    inset: 0;
+    background-color: #5226818e;
+}
+
+.card__content {
+    transition: all 300ms ease-in-out;
+    opacity: 0;
+}
+
+
+
+.projects__card:hover .card__content {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer__social__icons__container {
+    background-color: #F7F7F7;
+}
+
+.footer__social__icons__inside__container {
+    gap: 20px;
+}
+
+.footer__social__icons__container a {
+    color: #522681 !important;
+}
+
+.footer__social__icon {
+    gap: 10px;
+}
+
+.footer__social__icon i {
+    border-bottom: 1px #522681 solid;
+}
+
+@media (max-width:480px) {
+    .footer__social__icon p {
+        font-size: 15px;
+    }
 }
