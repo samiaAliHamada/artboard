@@ -176,13 +176,51 @@
     opacity: 0;
 }
 
-
-
 .projects__card:hover .card__content {
     opacity: 1;
 }
 
+.testimonials__section {
+    background-color: #F7F7F7;
+    min-height: 800px;
+    background-image: url(../images/Group\ 168.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 700px 750px;
+}
 
+.arrows__container {
+    gap: 10px;
+}
+
+.testimonials__arrow {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #D3E2CC;
+    transition: 200ms all ease-in-out;
+}
+
+.testimonials__arrow:hover,
+.testimonials__idea__btn:hover {
+    background-color: #83D95B;
+}
+
+.testimonials__idea__btn {
+    font-size: 40px;
+    height: 125px;
+    width: 600px;
+    border-radius: 50px;
+    background-color: #D3E2CC;
+    transition: 200ms all ease-in-out;
+}
+
+@media (max-width:768px) {
+    .testimonials__idea__btn {
+        width: 350px;
+        height: 100px;
+    }
+}
 
 
 
