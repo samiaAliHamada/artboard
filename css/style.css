@@ -130,10 +130,6 @@
 
 
 
-
-
-
-
 /* for home page */
 .main__section__left__part {
     gap: 70px;
@@ -296,6 +292,34 @@
     background-color: #D3E2CC;
 }
 
+
+
+
+/* for services page */
+.seo__shadow::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    background-color: #d3e2cc59;
+    left: 0;
+    bottom: 18px;
+}
+
+@media (max-width:768px) {
+
+    .header__text h1,
+    p,
+    .seo__text h4 {
+        font-size: 17px !important;
+        padding: 0 !important;
+    }
+}
+
+
+
+
+/* for about page */
 
 
 
